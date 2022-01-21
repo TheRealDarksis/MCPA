@@ -3,7 +3,7 @@ global AtomSpacing x y AtomType Vx Vy Mass0 Mass1 nAtoms
 
 if Type == 0
     Mass = Mass0;
-else
+else Type == 1
     Mass = Mass1;
 end
 

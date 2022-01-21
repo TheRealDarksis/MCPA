@@ -6,7 +6,7 @@ global AtomType Vx Vy Mass0 Mass1
 
 if Type == 0
     Mass = Mass0;
-else
+else Type == 1
     Mass = Mass1;
 end
 

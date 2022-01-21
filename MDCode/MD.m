@@ -1,4 +1,4 @@
-% clear all
+clear all
 clearvars
 clearvars -GLOBAL
 close all
@@ -41,9 +41,10 @@ ScaleF = 0;
 PlotPosOnly = 0;
 
 % Simulation initiallization
-InitThree
+% InitThree
 % InitBlock
 % InitCirc
+InitModCirc
 % InitBlock0
 % InitBlock0FD
 % InitVStream

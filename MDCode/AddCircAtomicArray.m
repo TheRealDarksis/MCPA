@@ -6,7 +6,7 @@ global AtomType Vx Vy Mass0 Mass1
 
 if Type == 0
     Mass = Mass0;
-else
+else Type == 1
     Mass = Mass1;
 end
 
@@ -19,7 +19,7 @@ yp(1, :) = linspace(-W/2, W/2, 2*rad);
 numAtoms = 0;
 for i = 1:2*rad
     for j = 1:2*rad
-        if xp(i)^2 + yp(j)^2 <= (rad*AtomSpacing)^2
+        if xp(i)^2 + yp(j) <= (rad*AtomSpacing)^2 %Modified the equation for a circle: x^2 + y.
             numAtoms = numAtoms+1;
             x(nAtoms + numAtoms) = xp(i);
             y(nAtoms  + numAtoms) = yp(j);
